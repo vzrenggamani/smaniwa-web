@@ -1,0 +1,212 @@
+<html><head>
+		<title>Landed by HTML5 UP</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<nav id="nav">
+						<ul>
+							<li style="white-space: nowrap;"><a href="index.html">Home</a></li>
+							<li class="opener" style="user-select: none; cursor: pointer; white-space: nowrap;">
+								<a href="#">Layouts</a>
+								
+							<ul class="" style="user-select: none; display: none; position: absolute;">
+									<li style="white-space: nowrap;"><a href="left-sidebar.html" style="display: block;">Left Sidebar</a></li>
+									<li style="white-space: nowrap;"><a href="right-sidebar.html" style="display: block;">Right Sidebar</a></li>
+									<li style="white-space: nowrap;"><a href="no-sidebar.html" style="display: block;">No Sidebar</a></li>
+									<li class="opener" style="user-select: none; cursor: pointer; white-space: nowrap;">
+										<a href="#" style="display: block;">Submenu</a>
+										<ul class="dropotron" style="user-select: none; display: none; position: absolute;">
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 1</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 2</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 3</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 4</a></li>
+										</ul>
+									</li>
+								</ul></li>
+							<li style="white-space: nowrap;"><a href="elements.html">Elements</a></li>
+							<li style="white-space: nowrap;"><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner" style="">
+					<div class="content">
+						<header>
+							<h2>WEB BARU GAIS</h2>
+							<p>DIBIKIN KARENA ADA YANG SOMBONG GAIS<br>DIA MAH SENYUM SENYUM AJA</p>
+						</header>
+						<span class="image"><img src="images/DSC_0083.jpg" alt=""></span>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom" style="">
+					<span class="image fit main"><img src="images/DSC_0011.jpg" alt=""></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								
+								<div class="col-4 col-12-medium">
+									<header>
+							<h2>MPLS</h2>
+							<p>(Masa Pengenalan Lingkungan Sekolah)</p>
+						</header><p>wes ndak kakean cocot sek ya gaiseu</p>
+								</div>
+								<div class="col-4 col-12-medium">
+									<p>sek nyobak iki gaes...dungakno isok</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right" style="">
+					<span class="image fit main"><img src="images/pic03.jpg" alt=""></span>
+					<div class="content">
+						<header>
+							<h2>Interdum amet non magna accumsan</h2>
+							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left" style="">
+					<span class="image fit main bottom"><img src="images/pic04.jpg" alt=""></span>
+					<div class="content">
+						<header>
+							<h2>Interdum felis blandit praesent sed augue</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>Accumsan sed tempus adipiscing blandit</h2>
+							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-chart-area"></span>
+									<h3>Ipsum sed commodo</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-comment"></span>
+									<h3>Eleifend lorem ornare</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-flask"></span>
+									<h3>Cubilia cep lobortis</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-paper-plane"></span>
+									<h3>Non semper interdum</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-file"></span>
+									<h3>Odio laoreet accumsan</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-lock"></span>
+									<h3>Massa arcu accumsan</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="#" class="button">Magna sed feugiat</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Five -->
+				<section id="five" class="wrapper style2 special fade">
+					<div class="container">
+						<header>
+							<h2>Magna faucibus lorem diam</h2>
+							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+						</header>
+						<form method="post" action="#" class="cta">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address"></div>
+								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary"></div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Â© Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script><ul class="dropotron level-0" style="user-select: none; display: none; position: absolute; z-index: 1000;">
+									<li style="white-space: nowrap;"><a href="left-sidebar.html" style="display: block;">Left Sidebar</a></li>
+									<li style="white-space: nowrap;"><a href="right-sidebar.html" style="display: block;">Right Sidebar</a></li>
+									<li style="white-space: nowrap;"><a href="no-sidebar.html" style="display: block;">No Sidebar</a></li>
+									<li class="opener" style="user-select: none; cursor: pointer; white-space: nowrap;">
+										<a href="#" style="display: block;">Submenu</a>
+										<ul class="dropotron level-1" style="user-select: none; display: none; position: absolute; z-index: 1001;">
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 1</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 2</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 3</a></li>
+											<li style="white-space: nowrap;"><a href="#" style="display: block;">Option 4</a></li>
+										</ul>
+									</li>
+								</ul><div id="titleBar"><a href="#navPanel" class="toggle"></a><span class="title"><a href="index.html">SMANIWIRRR</a></span></div><div id="navPanel"><nav><a class="link depth-0" href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Home</a><a class="link depth-0" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Layouts</a><a class="link depth-1" href="left-sidebar.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-1"></span>Left Sidebar</a><a class="link depth-1" href="right-sidebar.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-1"></span>Right Sidebar</a><a class="link depth-1" href="no-sidebar.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-1"></span>No Sidebar</a><a class="link depth-1" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-1"></span>Submenu</a><a class="link depth-2" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-2"></span>Option 1</a><a class="link depth-2" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-2"></span>Option 2</a><a class="link depth-2" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-2"></span>Option 3</a><a class="link depth-2" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-2"></span>Option 4</a><a class="link depth-0" href="elements.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Elements</a><a class="link depth-0" href="#" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Sign Up</a></nav></div>
+
+	
+</body></html>
