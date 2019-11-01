@@ -1,0 +1,4 @@
+FROM httpd:latest
+COPY .// /usr/apache2/htdocs/
+LABEL SMANIWA WEB PROJECT CONTAINER IMAGES
+EXPOSE 80
