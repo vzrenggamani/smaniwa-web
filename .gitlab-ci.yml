@@ -1,8 +1,4 @@
-image: node:8
-
-cache:
-  path:
-    - node_module/
+image: node:latest
 
 deploy_production:
   stage: deploy
