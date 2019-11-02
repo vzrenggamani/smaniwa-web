@@ -1,4 +1,4 @@
-image: node:latest
+image: node:8
 
 cache:
   path:
@@ -13,5 +13,5 @@ deploy_production:
   - git checkout landing-page
   - npm install -g firebase-tools
   - npm install
-  - firebase use --token $FIREBASE_TOKEN production
+  - firebase use --token $FIREBASE_TOKEN smaniwaweb-landing
   - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
