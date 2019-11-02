@@ -1,0 +1,17 @@
+image: node:latest
+
+cache:
+  path:
+    - node_module/
+
+deploy_production:
+  stage: deploy
+  environment: Production
+  only:
+    - landing-page
+  script:
+  - git checkout landing-page
+  - npm install -g firebase-tools
+  - npm install
+  - firebase use --token $FIREBASE_TOKEN production
+  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
