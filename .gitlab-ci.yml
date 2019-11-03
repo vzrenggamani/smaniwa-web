@@ -11,9 +11,10 @@ build_sites:
     - master
   before_script:
   - gem install bundler
-  script:
-  - git pull --all
+  - git pull https://gitlab.com/vzrenggamani/smaniwa-web-project.git blog
+  - git branch
   - git checkout blog
+  script:
   - bundle install --path=vendor/
   - bundle exec jekyll build
   artifacts:
