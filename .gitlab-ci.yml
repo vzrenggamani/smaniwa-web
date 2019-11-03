@@ -1,0 +1,36 @@
+build_sites:
+  image: ruby:2.3
+  stages: build
+  cache:
+    paths:
+    - vendor
+  environment: Production
+  only:
+    - blog
+  before_script:
+  - gem install bundler
+  script:
+  - git checkout blog
+  - bundle install --path=vendor/
+  - bundle exec jekyll build
+  artifacts:
+    paths:
+    - _site/
+
+deploy_web:
+  image: node:latest
+  stages: deploy
+  environment: Production
+  only:
+    - landing-page
+    - blog
+  before_script:
+  - npm install -g firebase-tools
+  - cp _site/ public/
+  script:
+  - firebase use --token $FIREBASE_TOKEN smaniwaweb-blog
+  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN 
+  - git checkout landing-page
+  - npm install
+  - firebase use --token $FIREBASE_TOKEN smaniwaweb-landing
+  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
