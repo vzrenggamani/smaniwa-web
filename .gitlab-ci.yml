@@ -12,6 +12,7 @@ build_sites:
   before_script:
   - gem install bundler
   script:
+  - git pull --all
   - git checkout blog
   - bundle install --path=vendor/
   - bundle exec jekyll build
