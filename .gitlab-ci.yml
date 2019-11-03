@@ -1,5 +1,5 @@
 build_sites:
-  image: ruby:2.3
+  image: ruby:latest
   stage: build
   cache:
     paths:
