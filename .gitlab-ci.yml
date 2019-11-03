@@ -8,6 +8,7 @@ build_sites:
   only:
     - blog
     - landing_page
+    - master
   before_script:
   - gem install bundler
   script:
@@ -25,6 +26,7 @@ deploy_web:
   only:
     - landing-page
     - blog
+    - master
   before_script:
   - npm install -g firebase-tools
   script:
