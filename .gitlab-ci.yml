@@ -11,7 +11,8 @@ build_sites:
     - master
   before_script:
   - gem install bundler
-  - git pull https://gitlab.com/vzrenggamani/smaniwa-web-project.git blog
+  - git fetch -a
+  - git pull --all
   - git branch
   - git checkout blog
   script:
