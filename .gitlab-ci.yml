@@ -1,6 +1,6 @@
 build_sites:
   image: ruby:2.3
-  stages: build
+  stage: build
   cache:
     paths:
     - vendor
@@ -19,17 +19,17 @@ build_sites:
 
 deploy_web:
   image: node:latest
-  stages: deploy
+  stage: deploy
   environment: Production
   only:
     - landing-page
     - blog
   before_script:
   - npm install -g firebase-tools
-  - cp _site/ public/
   script:
   - firebase use --token $FIREBASE_TOKEN smaniwaweb-blog
-  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN 
+  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
+  - git clean -f
   - git checkout landing-page
   - npm install
   - firebase use --token $FIREBASE_TOKEN smaniwaweb-landing
