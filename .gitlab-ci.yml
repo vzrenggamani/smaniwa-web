@@ -1,0 +1,28 @@
+image: ruby:2.3
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  - bundle install
+  - apt install node
+  - npm install -g firebase-tools
+
+build_blog:
+  stage: build
+  script:
+  - bundle exec jekyll build -d _site
+  only:
+  - blog
+
+
+deploy_web:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  only:
+  - blog
+  script:
+  - firebase use --token $FIREBASE_TOKEN smaniwaweb-blog
+  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
