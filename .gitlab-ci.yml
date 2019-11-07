@@ -5,8 +5,8 @@ variables:
   LC_ALL: C.UTF-8
 
 before_script:
+  - gem install bundler
   - bundle install
-  - bundle update --bundler
   - apt install node
   - npm install -g firebase-tools
 
