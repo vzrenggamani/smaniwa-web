@@ -1,19 +1,20 @@
-image: ruby:latest
+cache:
+    paths:
+    - _site/
 
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
-services:
-  - node:latest
-
-before_script:
+build_blog:
+  image: ruby:latest
+  stage: build
+  artifacts:
+    paths:
+    - _site
+  before_script:
   - gem install bundler
   - bundle install
-  - npm install -g firebase-tools
-
-build_blog:
-  stage: build
   script:
   - bundle exec jekyll build -d _site
   only:
@@ -21,11 +22,15 @@ build_blog:
 
 
 deploy_web:
+  image: node:latest
+  environment: Production
   stage: deploy
-  script:
-  - bundle exec jekyll build -d public
+  before_script:
+  - npm install -g firebase-tools
   only:
   - blog
   script:
   - firebase use --token $FIREBASE_TOKEN smaniwaweb-blog
+  - export COMMIT_HASH=$(echo $CI_BUILD_REF | cut -b -6)
   - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
+  
