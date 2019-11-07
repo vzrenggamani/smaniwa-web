@@ -4,6 +4,9 @@ variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
+services:
+  - node:latest
+
 before_script:
   - gem install bundler
   - bundle install
