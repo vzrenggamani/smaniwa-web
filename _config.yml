@@ -4,7 +4,7 @@ title: "SMANIWA Board Pages"
 description: "Mocking up"
 #logo: 'assets/images/logo.png'
 #favicon: 'assets/images/logo.png'
-baseurl: /
+baseurl: https://smaniwaweb-blog.firebaseapp.com/
 #google_analytics: 'UA-46278016-1'
 disqus: 'vzrenggamani'
 include: ["_pages"]
