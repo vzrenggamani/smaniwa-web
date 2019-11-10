@@ -10,12 +10,22 @@ fi
 
 echo BUILDING DOCKER IMAGES FILES
 echo ----------------------------
-sudo docker build -t web-galeri .
+docker build -t --compress web-galeri .
 echo Docker Images ID >> docker_images
-sudo docker images | grep "galeri" >> docker_images
+docker images | grep "galeri" >> docker_images
 
 echo RUNNING THE DOCKER IMAGES
 echo ----------------------------
-sudo docker run -dit --name web-galeri -p 80:80 web-galeri
+docker run -dit --rm --name web-galeri -p 80:80 web-galeri
 echo Docker Images PS ID >> docker_images
-sudo docker ps | grep "galeri" >> docker_images
+docker ps | grep "galeri" >> docker_images
+
+echo ==========================================
+echo BUILDING GALERI WEB IS DONE!
+echo ----
+echo current dir : $PWD
+echo current user : $USER
+echo ----
+echo Container Details :
+cat docker_images
+echo ==========================================
