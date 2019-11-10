@@ -1,0 +1,8 @@
+[submodule "smaniwa-web-project"]
+	path = landing-page
+	url = https://gitlab.com/vzrenggamani/smaniwa-web-project.git
+	branch = landing-page
+[submodule "blog"]
+	path = blog
+	url = https://gitlab.com/vzrenggamani/smaniwa-web-project.git
+	branch = blog
