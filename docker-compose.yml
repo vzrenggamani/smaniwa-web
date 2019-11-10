@@ -1,10 +1,9 @@
 landing-page:
-	build: ./landing-page/
-	ports:
+    build: ./landing-page/
+    ports:
 	- "8080:80"
 blog-page:
-	build: ./blog/
-	ports:
-	- "4000:4000"
-	command: jekyll serve
-
+    build: ./blog/
+    ports:
+    - "4000:4000"
+    command: jekyll serve
