@@ -2,22 +2,21 @@
 
 if [ -f docker_images ]; then
 echo Creating Simple Logs
+rm ./docker_images
 touch docker_images
 else
-rm docker_images
+rm ./docker_images
 touch docker_images
 fi
 
 echo BUILDING DOCKER IMAGES FILES
 echo ----------------------------
-docker build -t --compress web-galeri .
-echo Docker Images ID >> docker_images
+docker build --compress -t web-galeri .
 docker images | grep "galeri" >> docker_images
 
 echo RUNNING THE DOCKER IMAGES
 echo ----------------------------
 docker run -dit --rm --name web-galeri -p 80:80 web-galeri
-echo Docker Images PS ID >> docker_images
 docker ps | grep "galeri" >> docker_images
 
 echo ==========================================

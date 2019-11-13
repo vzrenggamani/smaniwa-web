@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/blog",
+        "destination": "https://smaniwaweb-blog.firebaseapp.com"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
